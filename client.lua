@@ -79,7 +79,8 @@ end)
     end
 end)]]
 
---added for ps-housingRegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
+--added for ps-housing
+RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
         QBCore.Functions.TriggerCallback('qb-spawn:server:getOwnedHouses', function(houses)
             local myHouses = {}
@@ -271,7 +272,8 @@ end
     cb('ok')
 end)]]
 
---added for ps-housingRegisterNUICallback('spawnplayer', function(data, cb)
+--added for ps-housing
+RegisterNUICallback('spawnplayer', function(data, cb)
     local location = tostring(data.spawnloc)
     local type = tostring(data.typeLoc)
     local ped = PlayerPedId()
