@@ -1,6 +1,6 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 
---removed for ps-housing
+--removed by pamela for ps-housing
 --[[QBCore.Functions.CreateCallback('qb-spawn:server:getOwnedHouses', function(_, cb, cid)
     if cid ~= nil then
         local houses = MySQL.query.await('SELECT * FROM player_houses WHERE citizenid = ?', {cid})
@@ -14,7 +14,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
     end
 end)]]
 
---added for ps-housing
+--added by pamela for ps-housing
 QBCore.Functions.CreateCallback('qb-spawn:server:getOwnedHouses', function(_, cb, cid)
     if cid ~= nil then
         local houses = MySQL.query.await('SELECT * FROM properties WHERE owner_citizenid = ?', {cid})

@@ -48,7 +48,7 @@ RegisterNetEvent('qb-houses:client:setHouseConfig', function(houseConfig)
     Houses = houseConfig
 end)
 
---removed for ps-housing
+--removed by pamela for ps-housing
 --[[RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
         QBCore.Functions.TriggerCallback('qb-spawn:server:getOwnedHouses', function(houses)
@@ -79,7 +79,7 @@ end)
     end
 end)]]
 
---added for ps-housing
+--added by pamela for ps-housing
 RegisterNetEvent('qb-spawn:client:setupSpawns', function(cData, new, apps)
     if not new then
         QBCore.Functions.TriggerCallback('qb-spawn:server:getOwnedHouses', function(houses)
@@ -161,7 +161,7 @@ RegisterNUICallback('setCam', function(data, cb)
     cb('ok')
 end)
 
---removed for ps-housing
+--removed by pamela for ps-housing
 --[[RegisterNUICallback('chooseAppa', function(data, cb)
     local ped = PlayerPedId()
     local appaYeet = data.appType
@@ -181,7 +181,7 @@ end)
     cb('ok')
 end)]]
 
---added for ps-housing
+--added by pamela for ps-housing
 RegisterNUICallback('chooseAppa', function(data, cb)
     local ped = PlayerPedId()
     local appaYeet = data.appType
@@ -221,7 +221,7 @@ local function PostSpawnPlayer(ped)
     DoScreenFadeIn(250)
 end
 
---removed for ps-housing
+--removed by pamela for ps-housing
 --[[RegisterNUICallback('spawnplayer', function(data, cb)
     local location = tostring(data.spawnloc)
     local type = tostring(data.typeLoc)
@@ -272,7 +272,7 @@ end
     cb('ok')
 end)]]
 
---added for ps-housing
+--added by pamela for ps-housing
 RegisterNUICallback('spawnplayer', function(data, cb)
     local location = tostring(data.spawnloc)
     local type = tostring(data.typeLoc)
